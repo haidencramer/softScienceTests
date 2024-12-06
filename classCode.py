@@ -132,6 +132,8 @@ class Library:
 class Calculator:
     def __init__(self):
         self.history = []
+
+        # Not sure if this just wasn't used but we disregarded it from our testing as this is the only instance of it. 
         self.memory = 0
 
     def add(self, a, b):
@@ -269,6 +271,6 @@ def main():
         else:
             print("Invalid choice. Please try again.")
 
-
 if __name__ == "__main__":
     main()
+
