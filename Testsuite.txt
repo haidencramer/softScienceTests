@@ -2,7 +2,7 @@ Test Case ID		                         Input		                     Expected Outp
 
 TC001			                   len(self.library.books)                           2
 
-TC002                                   
+TC002                                  
 
 TC003
 

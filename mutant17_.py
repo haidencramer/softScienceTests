@@ -19,7 +19,7 @@ class Member:
         self.borrowed_books = []
 
     def borrow_book(self, book):
-        if len(self.borrowed_books) <= 3:
+        if len(self.borrowed_books) >= 3:
             return False  # Limit of 3 books per member
         self.borrowed_books.append(book)
         return True
@@ -101,7 +101,7 @@ class Library:
 
     def find_member(self, member_id):
         for member in self.members:
-            if member.member_id == member_id:
+            if member.member_id >= member_id:
                 return member
         return None
 

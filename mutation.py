@@ -31,8 +31,7 @@ import re
 import random
 
 # Define the file paths
-input_file_path = "classCode.py"  # Original file
-output_file_path = "mutant1.py"  # Mutated file
+input_file_path = "code_1.py"  # Original file
 
 # Define the regex pattern for the operators
 operator_pattern = r"(\+=|-=|\*\*=|==|!=|<=|>=|<|>|\+|-|\*|/|%)"
@@ -60,11 +59,10 @@ def mutate_operator(content):
 with open(input_file_path, "r") as file:
     content = file.read()
 
+
 # Mutate the content
 for i in range(30):
     mutated_content = mutate_operator(content)
     # Write the mutated content to the output file
     with open(f"mutant{i}.py", "w") as file:
         file.write(mutated_content)
-
-    print(f"Mutated file written to {output_file_path}")
