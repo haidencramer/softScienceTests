@@ -62,14 +62,9 @@ with open(input_file_path, "r") as file:
 
 # Mutate the content
 for i in range(30):
-    if i > 20:
-        mutated_content = mutate_operator(content)
-        while mutated_content == '==':
-            mutated_content = mutate_operator(content)
-
     mutated_content = mutate_operator(content)
     # Write the mutated content to the output file
-    with open(f"mutant{i}", "w") as file:
+    with open(f"mutant{i}.py", "w") as file:
         file.write(mutated_content)
 
-print(f"Mutated file written to {output_file_path}")
+    print(f"Mutated file written to {output_file_path}")
