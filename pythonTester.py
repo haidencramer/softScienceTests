@@ -1,5 +1,9 @@
 import unittest
+<<<<<<< HEAD
 from mutant29 import Library, Calculator
+=======
+from classCode import Library, Calculator
+>>>>>>> 279553ab96caf76df08966bd001f89c84962ffdd
 
 class TestLibrarySystem(unittest.TestCase):
 
@@ -146,13 +150,6 @@ class TestCalculator(unittest.TestCase):
         self.assertNotEqual(self.calc.power(2, 3), 4)
 
         self.assertTrue(self.calc.power(2, 3), 8)
-
-# def main():
-#     file_path = '\Users\benne\Documents\GitHub\softScienceTests\pythonTestor.py'
-# with open(file_path, 'r') as file:
-#     file_content = file.read()
-
-# print(file_content)
 
 if __name__ == '__main__':
     unittest.main()
