@@ -1,65 +1,65 @@
-Test Case ID		                         Input		                     Expected Output
+Test Case ID		                         Input		                        Expected Output
 
-TC001			                   len(self.library.books)                           2
+TC001			                    len(self.library.books)                           2
 
-TC002                                   
+TC002                               self.library.books[0].title                   "Mr. Book"
 
-TC003
+TC003                               self.library.books[1].copies                       2
 
-TC004
+TC004                               len(self.library.members)                          2
 
-TC005
+TC005                               self.library.members[0].name                    "Tpain"
 
-TC006
+TC006                               self.library.members[1].name                    "brudda"
 
-TC007
+TC007                               self.library.books[0].copies                        0
 
-TC008
+TC008                               len(self.library.members[0].borrowed_books)         1
 
-TC009
+TC009                               len(self.library.members[0].borrowed_books)         0
 
-TC010
+TC010                               len(self.library.members[0].borrowed_books)         3
 
-TC011
+TC011                               self.library.books[0].copies                        1
 
-TC012
+TC012                               len(self.library.members[0].borrowed_books)         0
 
-TC013
+TC013                               self.library.books[0].copies                        1
 
-TC014
+TC014                               book                                               True
 
-TC015
+TC015                               book.title                                       "Mr. Book"
 
-TC016
+TC016                               member                                             True
 
-TC017
+TC017                               member.name                                       "Tpain"
 
-TC018
+TC018                               self.calc.add(10, 15)                               25
 
-TC019
+TC019                               self.calc.add(10, 15)                               18
 
-TC020
+TC020                               self.calc.add(10, 15)                               25
 
-TC021
+TC021                               self.calc.subtract(15, 10)                          5
 
-TC022
+TC022                               self.calc.subtract(10, 15)                          18
 
-TC023
+TC023                               self.calc.subtract(15, 10)                          5
 
-TC024
+TC024                               self.calc.multiply(2, 3)                            6
 
-TC025
+TC025                               self.calc.multiply(2, 3)                            28
 
-TC026
+TC026                               self.calc.multiply(2, 3)                            6
 
-TC027
+TC027                               self.calc.divide(6, 3)                              2
 
-TC028
+TC028                               self.calc.divide(6, 3)                              5
 
-TC029
+TC029                               self.calc.divide(6, 3)                              2
 
-TC030
+TC030                               self.calc.power(2, 3)                               8
 
-TC031
+TC031                               self.calc.power(2, 3)                               4
 
-TC032
+TC032                               self.calc.power(2, 3)                               8
