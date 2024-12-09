@@ -126,14 +126,12 @@ class TestCalculator(unittest.TestCase):
         # Subtract Tests
         self.assertEqual(self.calc.subtract(15, 10), 5)
         self.assertNotEqual(self.calc.subtract(10, 15), 18)
-
         self.assertTrue(self.calc.subtract(15, 10), 5)
 
 
         # Multipy Tests
         self.assertEqual(self.calc.multiply(2, 3), 6)
         self.assertNotEqual(self.calc.multiply(2, 3), 28)
-
         self.assertTrue(self.calc.multiply(2, 3), 6)
    
 
@@ -149,12 +147,14 @@ class TestCalculator(unittest.TestCase):
 
         self.assertTrue(self.calc.power(2, 3), 8)
 
-def main():
-    with open('classCode.py', 'r') as python_file:
-        with open('classCodeText.txt', 'w') as text_file:
-            text_file.write(python_file.read())
+# def main():
+#     file_path = '\Users\benne\Documents\GitHub\softScienceTests\pythonTestor.py'
+# with open(file_path, 'r') as file:
+#     file_content = file.read()
+
+# print(file_content)
 
 if __name__ == '__main__':
     unittest.main()
-    
+    # main()
 
