@@ -2,11 +2,7 @@ Test Case ID		                         Input		                        Expected O
 
 TC001			                    len(self.library.books)                           2
 
-<<<<<<< HEAD
-TC002                                  
-=======
-TC002                               self.library.books[0].title                   "Mr. Book"
->>>>>>> 279553ab96caf76df08966bd001f89c84962ffdd
+TC002                              self.library.books[0].title                   "Mr. Book"    
 
 TC003                               self.library.books[1].copies                       2
 

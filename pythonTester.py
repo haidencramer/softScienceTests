@@ -1,9 +1,5 @@
 import unittest
-<<<<<<< HEAD
 from mutant29 import Library, Calculator
-=======
-from classCode import Library, Calculator
->>>>>>> 279553ab96caf76df08966bd001f89c84962ffdd
 
 class TestLibrarySystem(unittest.TestCase):
 
